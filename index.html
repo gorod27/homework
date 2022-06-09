@@ -198,7 +198,7 @@
        </div>
        <div class="inscription-2 "> 
         <span>Vasa Ivavova - @vasa_ivan</span>
-       <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto praesentium tempore aperiam incidunt? Architecto rerum aliquid quod odit dolores cumque? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea perspiciatis quam exercitationem quos et dolorum enim magnam laudantium aut quod.
+       <p> Vestibulum sit amet tortor sit amet libero lobortis semper at et odio. Iusto praesentium tempore aperiam incidunt? Architecto rerum aliquid quod odit dolores cumque? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea perspiciatis quam exercitationem quos et dolorum enim magnam laudantium aut quod.
       </p>
       </div>
       <div class="inscription-3 "> 
@@ -208,11 +208,11 @@
       </div>
       <div class="inscription-4 "> 
         <span>Miya Snow - @miya_snow</span>
-       <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto praesentium tempore aperiam incidunt? Architecto rerum aliquid quod odit dolores cumque? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea perspiciatis quam exercitationem quos et dolorum enim magnam laudantium aut quod.
+       <p> Vestibulum sit amet tortor sit amet libero lobortis semper at et odio. Iusto praesentium tempore aperiam incidunt? Architecto rerum aliquid quod odit dolores cumque? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea perspiciatis quam exercitationem quos et dolorum enim magnam laudantium aut quod.
       </p>
       </div>
       <div class="inscription-5 "> 
-        <span>Kate Ttue - @kate_true</span>
+        <span>Kate True - @kate_true</span>
        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto praesentium tempore aperiam incidunt? Architecto rerum aliquid quod odit dolores cumque? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea perspiciatis quam exercitationem quos et dolorum enim magnam laudantium aut quod.
       </p>
       </div>
@@ -375,26 +375,26 @@
   </main>
 
   <script>
-    $( ".avatar" ).click(function() {
-    $( ".inscription" ).fadeToggle( "slow" ); 
-    $( ".inscription-2, .inscription-3, .inscription-4, .inscription-5" ).hide( ); 
-  });
-  $( ".avatar-2" ).click(function() {
-    $( ".inscription-2" ).fadeToggle( "slow"  ); 
-    $( ".inscription, .inscription-3, .inscription-4, .inscription-5" ).hide(  );  
-  });
-  $( ".avatar-3" ).click(function() {
-    $( ".inscription-3" ).fadeToggle( "slow" ); 
-    $( ".inscription, .inscription-2, .inscription-4, .inscription-5" ).hide(  );  
-  });
-  $( ".avatar-4" ).click(function() {
-    $( ".inscription-4" ).fadeToggle( "slow" ); 
-    $( ".inscription, .inscription-2, .inscription-3, .inscription-5" ).hide(  );  
-  });
-  $( ".avatar-5" ).click(function() {
-    $( ".inscription-5" ).fadeToggle( "slow" ); 
-    $( ".inscription, .inscription-2, .inscription-3, .inscription-4" ).hide(  );  
-  });
+    $( ".avatar").mouseenter(function() {
+  $( ".inscription" ).show( ),
+  $( ".inscription-2, .inscription-3, .inscription-4, .inscription-5" ).hide( );
+});
+$( ".avatar-2").mouseenter(function() {
+  $( ".inscription-2" ).show( ),
+  $( ".inscription, .inscription-3, .inscription-4, .inscription-5" ).hide( );
+});
+$( ".avatar-3").mouseenter(function() {
+  $( ".inscription-3" ).show( ),
+  $( ".inscription-2, .inscription, .inscription-4, .inscription-5" ).hide( );
+});
+$( ".avatar-4").mouseenter(function() {
+  $( ".inscription-4" ).show( ),
+  $( ".inscription, .inscription-2, .inscription-3, .inscription-5" ).hide( );
+});
+$( ".avatar-5").mouseenter(function() {
+  $( ".inscription-5" ).show( ),
+  $( ".inscription, .inscription-2, .inscription-3, .inscription-4" ).hide( );
+});
   </script>
   <script>
     $("#changeStyle").click(function() {
@@ -433,6 +433,5 @@
      return false;
     });
     </script>
-  
 </body>
 </html>
