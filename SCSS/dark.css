@@ -1,0 +1,150 @@
+.dark body {
+  background-color: #303030;
+}
+
+.dark body main {
+  background-image: url(/IMG/Rectangle-1.png);
+}
+
+.dark body h1, .dark body h2, .dark body h3, .dark body p, .dark body a {
+  color: #fff;
+}
+
+.dark body .features__title {
+  color: #fff;
+}
+
+.dark body .features {
+  background-image: url(/IMG/back-2.png);
+}
+
+.dark body .features .features__footer span {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.dark footer {
+  background-color: #302b44;
+  background-image: url(/IMG/footer-3.png);
+}
+
+.dark footer select {
+  background-color: #424242;
+  color: #fff;
+  background-image: url(/IMG/android-globe-2.png);
+}
+
+.dark .menu a {
+  color: #D1C4E9;
+}
+
+.dark .menu .log a {
+  color: #fff;
+}
+
+.dark .menu .log #svg {
+  background-image: url(/SVG/gear_2.svg);
+}
+
+.dark .update h3, .dark .update p {
+  color: #fff;
+}
+
+.dark .update a {
+  color: #D1C4E9;
+}
+
+.dark .update .update__container, .dark .update .update__container-2 {
+  background-color: #424242;
+}
+
+.dark .update .update__container-back {
+  background-color: #4e42e4;
+}
+
+.dark .features__text .features__title, .dark .features__text p {
+  color: #fff;
+}
+
+.dark .slider .nav span {
+  background-color: #424242;
+}
+
+.dark .slider .nav span.on {
+  background: #70d0e2;
+}
+
+.dark .slider .slider__content-1 p {
+  color: #fff;
+}
+
+.dark .main__login {
+  background-image: none;
+  background-color: #303030;
+}
+
+.dark .main__login .log a {
+  color: #fff;
+}
+
+.dark .main__login .login__form {
+  background-color: #424242;
+}
+
+.dark .main__login .login__form .inscription .stick {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.7);
+}
+
+.dark .main__login .login__form .inscription p {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.dark .main__login .login__form input {
+  background-color: #292929;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.dark .main__login .login__form .remember__word {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.dark .main__login .contact input, .dark .main__login .contact textarea {
+  background-color: #292929;
+  color: rgba(255, 255, 255, 0.7);
+  border-color: #565656;
+}
+
+.dark .main__login footer {
+  background-color: #303030;
+}
+
+.dark .main__login .footer__social div {
+  background-color: #424242;
+}
+
+.dark .main__login .footer__social .footer__social-fb {
+  background-image: url(/IMG/fb_footer-black.png);
+}
+
+.dark .main__login .footer__social .footer__social-link {
+  background-image: url(/IMG/li_footer-black.png);
+}
+
+.dark .main__login .footer__social .footer__social-tw {
+  background-image: url(/IMG/twiter-footer_black.png);
+}
+
+.dark .main__login .footer__social .footer__social-in {
+  background-image: url(/IMG/inst_footer_black.png);
+}
+
+.dark .button {
+  background-color: #673AB7 !important;
+}
+
+.dark #svg {
+  background-image: url(/SVG/gear_2.svg);
+}
+
+.dark .not__stile {
+  background-color: #424242 !important;
+}

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/SCSS/contact.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <title>Contact Us</title>
+  <link rel="icon" type="image/x-icon" href="/IMG/logo.png">
+</head>
+<body>
+  <main class="main__login">
+  <header >
+    <div class="logo">
+      <a href="index.html">
+      <img  src="/SVG/logo.svg" alt="" srcset="">
+      <p>Social</p>
+    </a>
+    </div>
+    <div class="log">
+      <a href="/Login.html">LOGIN</a>   
+      <a href="/register.html" class="detail">REGISTER</a>   
+      <div class="stick"></div>
+      <div id="svg">
+      </div>
+    </div>
+    <div class="options">
+      <ul>
+        <li><a href="#" id="changeStyle">Dark theme</a> </li>
+        <li><a href="/contact.html">Contacts us</a> </li>
+        <li><a href="#">Menu</a> </li>
+      </ul>
+    </div>
+  </header>
+  <div class="contact">
+    <h1>Contact Us</h1>
+    <div class="contact__stick"></div>
+    <p>Aenean sit amet magna vel magna fringilla fermentum. Donec sit amet nulla sed arcu pulvinar ultricies commodo id ligula.</p>
+    <form action="" >
+      <input type="text" name="name" placeholder="What is your name? *">
+      <input type="email" placeholder="What is your email? *">
+      <input type="tel" name="tel"  placeholder="What is your phone number?">
+      <input type="text" placeholder="What is your company?" >
+      <textarea name="" id="textarea" cols="30" rows="10" class="contact__text" placeholder="Write your message here"></textarea>
+      <label for="checkbox" id="label_checkbox">
+        <input type="checkbox" name="" id="checkbox" checked>
+        <span class="remember"></span>
+        <span class="remember__word">I have read and accept the Terms of 
+          <a href="#" class="not__stile">Service & Privacy Policy *</a></span>
+      
+    </label>
+      <input type="submit" value="SEND MESSAGE" class="button">
+    </form>
+  </div>
+  <footer>
+    <div class="footer">
+      <div class="footer__div-1">
+        <div class="logo">
+          <img src="/SVG/logo.svg" alt="" srcset="">
+          <p>Social</p>
+        </div>
+        <p>Nam posuere accumsan porta. Integer id orci sed ante tincidunt tincidunt sit amet sed libero.</p>
+        <p>© Skyrev Theme 2021</p>
+      </div>
+      <div class="footer__div">
+        <h3>COMPANY</h3>
+        <a href="#">Donec dignissim</a>
+        <a href="#">Curabitur egesta</a>
+        <a href="#">Nam posuere</a>
+        <a href="#">Aenean facilisis</a>
+      </div>
+      <div class="footer__div">
+        <h3>SERVISES</h3>
+      <a href="#">Cras convallis</a>
+      <a href="#">Vestibulum faucibus</a>
+      <a href="#">Quisque lacinia purus</a>
+      <a href="#">Aliquam nec ex</a>
+      </div>
+      <div class="footer__div">
+        <h3>RESOURSES</h3>
+      <a href="#">Suspendisse porttito</a>
+      <a href="#">Nam posuere</a>
+      <a href="#">Curabitur egestas </a>
+      </div>
+      <div class="footer__div select">
+        <div class="footer__social">
+          <a href="https://facebook.com"><div class="footer__social-fb"></div></a>
+          <a href="https://facebook.com"><div class="footer__social-link"></div></a>
+          <a href="https://facebook.com"><div class="footer__social-tw"></div></a>
+          <a href="https://facebook.com"><div class="footer__social-in"></div></a>
+        </div>
+    <form action="select1.php" method="post"> 
+    <select id="changeStyle"  size="1">
+      <option id="changeStyle" selected value="English" >English - En</option>
+        <option  value="Українською" >Українською - Ua</option>
+        <option value="Français">Français - Fr</option>
+        <option value="Polski">Polski - Pl</option>
+        </select>
+    </form>
+      </div>
+    </div>
+  </footer>
+</main>
+<script>
+  $( "#svg" ).click(function() {
+  $( ".options" ).fadeToggle( "slow" ); 
+});
+</script>
+<script>
+  $("#changeStyle").click(function() {
+    $("html").toggleClass("dark");
+  });
+</script>
+</body>
+</html>

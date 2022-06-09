@@ -1,0 +1,132 @@
+@import "reset.scss";
+@import "pattern.scss";
+@import "login.scss";
+.contact {
+  width: 805px;
+  height: 585px;
+  margin: 0 auto;
+  h1 {
+    @extend %title;
+    padding-top: 60px
+  }
+  .contact__stick {
+    @extend %stick;
+    margin-bottom: 30px;
+  }
+  p {
+    width: 800px;
+    font-family: Regular;
+    font-size: 24px;
+    line-height: 36px;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.54);
+    margin: 0 auto;
+  }
+  form {
+    margin-top: 40px;
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+  }
+  input {
+    width: 390px;
+    height: 47px;
+    border: 1px solid rgba(0, 0, 0, 0.42);
+    border-radius: 8px;
+    margin-bottom: 40px;
+    font-family: Roboto;
+    font-size: 16px;
+    line-height: 19px;
+    color: rgba(0, 0, 0, 0.54); 
+    padding-left: 30px;
+    &:focus {
+      border: 2px solid #00BCD4;
+      outline: 0px;
+    }
+  }
+  .contact__text {
+    width: 800px;
+    height: 105px;
+    border-radius: 8px;
+    border: 1px solid rgba(0, 0, 0, 0.42);
+    font-family: Regular;
+    font-size: 16px;
+    line-height: 22px;
+    padding-left: 30px;
+  }
+  textarea {
+    font-family: Roboto;
+    font-size: 16px;
+    line-height: 19px;
+    color: rgba(0, 0, 0, 0.54); 
+    &:focus {
+      border: 2px solid #00BCD4;
+      outline: 0px;
+    }
+  }
+  #checkbox {
+    width: 16px;
+    opacity: 0;
+    margin-left: -23px;
+    margin-top: 20px;
+  }
+  .button {
+    @extend %button;
+    width: 170px;
+    height: 45px;
+    margin-top: 30px;
+    margin-right: 0;
+    &:hover {
+      top: 1px;
+    }
+  }
+}
+
+
+
+
+#label_checkbox {
+  font-family: Regular;
+  font-size: 18px;
+  line-height: 25px;
+  color: rgba(0, 0, 0, 0.87);
+  .remember__word {
+    width: 270px;
+    display: inline-block;
+    position: relative;
+    bottom: -5px;
+    left: 10px;
+    font-family: Regular;
+    font-size: 16px;
+    line-height: 22px;
+    color: rgba(0, 0, 0, 0.87);
+  }
+  .remember {
+    width: 25px;
+    height: 25px;
+    border: 1px solid #00BCD4;
+    display: inline-block;
+    position: relative;
+    background-color:#FFF;
+    border-radius:2px;
+    padding:3px;
+  }
+}
+[type=checkbox]:checked + .remember:before {/* <-- ставим иконку, когда чекбокс включен  */
+  content: '\2714';
+  position: absolute;
+  top: -2px;
+  left: 0;
+  right: 0;
+  font-size: 26px;
+  background-color: #00BCD4;
+  border: 1px solid #00BCD4;
+  color:white;
+}
+ footer {
+   top: 260px;
+   left: -8px
+ }
+
+
+ 

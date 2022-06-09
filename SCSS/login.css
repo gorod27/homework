@@ -1,0 +1,714 @@
+@charset "UTF-8";
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+header .logo, footer .logo {
+  width: 160px;
+  height: 55px;
+  position: relative;
+  left: 38px;
+  top: 23%;
+  bottom: 23%;
+}
+
+header .logo p, footer .logo p {
+  position: relative;
+  display: inline-block;
+  top: -55px;
+  font-family: SemiBold;
+  font-size: 36px;
+  line-height: 49px;
+  color: #302F2F;
+  margin-left: 60px;
+}
+
+header .log .detail {
+  display: inline-block;
+  position: relative;
+  padding: 10px;
+  width: 115px;
+  height: 40px;
+  border-radius: 40px;
+  background-color: #673AB7;
+  font-family: SemiBold;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+  color: #fff;
+  margin: -10px 30px;
+}
+
+.options {
+  display: none;
+  position: absolute;
+  right: 650px;
+  top: 80px;
+  width: 150px;
+}
+
+.options li {
+  margin-bottom: 5px;
+  height: 30px;
+  text-align: center;
+  font-family: SemiBold;
+  padding-top: 5px;
+}
+
+.options li a {
+  color: #673AB7;
+}
+
+.options li a:hover {
+  text-decoration: underline;
+}
+
+.options li a:active {
+  color: #673AB7;
+}
+
+.dark body {
+  background-color: #303030;
+}
+
+.dark body main {
+  background-image: url(/IMG/Rectangle-1.png);
+}
+
+.dark body h1, .dark body h2, .dark body h3, .dark body p, .dark body a {
+  color: #fff;
+}
+
+.dark body .features__title {
+  color: #fff;
+}
+
+.dark body .features {
+  background-image: url(/IMG/back-2.png);
+}
+
+.dark body .features .features__footer span {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.dark footer {
+  background-color: #302b44;
+  background-image: url(/IMG/footer-3.png);
+}
+
+.dark footer select {
+  background-color: #424242;
+  color: #fff;
+  background-image: url(/IMG/android-globe-2.png);
+}
+
+.dark .menu a {
+  color: #D1C4E9;
+}
+
+.dark .menu .log a {
+  color: #fff;
+}
+
+.dark .menu .log #svg {
+  background-image: url(/SVG/gear_2.svg);
+}
+
+.dark .update h3, .dark .update p {
+  color: #fff;
+}
+
+.dark .update a {
+  color: #D1C4E9;
+}
+
+.dark .update .update__container, .dark .update .update__container-2 {
+  background-color: #424242;
+}
+
+.dark .update .update__container-back {
+  background-color: #4e42e4;
+}
+
+.dark .features__text .features__title, .dark .features__text p {
+  color: #fff;
+}
+
+.dark .slider .nav span {
+  background-color: #424242;
+}
+
+.dark .slider .nav span.on {
+  background: #70d0e2;
+}
+
+.dark .slider .slider__content-1 p {
+  color: #fff;
+}
+
+.dark .main__login {
+  background-image: none;
+  background-color: #303030;
+}
+
+.dark .main__login .log a {
+  color: #fff;
+}
+
+.dark .main__login .login__form {
+  background-color: #424242;
+}
+
+.dark .main__login .login__form .inscription .stick {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.7);
+}
+
+.dark .main__login .login__form .inscription p {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.dark .main__login .login__form input {
+  background-color: #292929;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.dark .main__login .login__form .remember__word {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.dark .main__login .contact input, .dark .main__login .contact textarea {
+  background-color: #292929;
+  color: rgba(255, 255, 255, 0.7);
+  border-color: #565656;
+}
+
+.dark .main__login footer {
+  background-color: #303030;
+}
+
+.dark .main__login .footer__social div {
+  background-color: #424242;
+}
+
+.dark .main__login .footer__social .footer__social-fb {
+  background-image: url(/IMG/fb_footer-black.png);
+}
+
+.dark .main__login .footer__social .footer__social-link {
+  background-image: url(/IMG/li_footer-black.png);
+}
+
+.dark .main__login .footer__social .footer__social-tw {
+  background-image: url(/IMG/twiter-footer_black.png);
+}
+
+.dark .main__login .footer__social .footer__social-in {
+  background-image: url(/IMG/inst_footer_black.png);
+}
+
+.dark .button {
+  background-color: #673AB7 !important;
+}
+
+.dark #svg {
+  background-image: url(/SVG/gear_2.svg);
+}
+
+.dark .not__stile {
+  background-color: #424242 !important;
+}
+
+@font-face {
+  font-family: SemiBold;
+  src: url(/fonts/OpenSans-SemiBold.ttf);
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Bold;
+  src: url(/fonts/OpenSans-Bold.ttf);
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Regular;
+  src: url(/fonts/OpenSans-Regular.ttf);
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url(/fonts/Roboto-Regular.ttf);
+}
+
+body {
+  background-color: #fff;
+  position: relative;
+  z-index: 1;
+}
+
+#svg {
+  width: 30px;
+  height: 30px;
+  background-image: url(/SVG/gear.svg);
+  position: relative;
+  top: 7px;
+}
+
+#svg:hover {
+  transform: rotate(90deg);
+}
+
+main {
+  width: 1440px;
+  margin: 0 auto;
+}
+
+main a {
+  text-decoration: none;
+}
+
+header {
+  width: 88.88889%;
+  height: 105px;
+  margin: 0 auto;
+}
+
+header .logo img {
+  width: 55px;
+}
+
+header .log {
+  float: right;
+  display: flex;
+  position: relative;
+  top: -22px;
+  right: 30px;
+  height: 40px;
+}
+
+header .log a {
+  font-family: SemiBold;
+  font-size: 16px;
+  line-height: 22px;
+  color: #302F2F;
+  position: relative;
+  top: 10px;
+}
+
+header .log .detail:hover {
+  top: 9px;
+}
+
+header .stick {
+  height: 25px;
+  border-right: 1px solid #979797;
+  margin-right: 30px;
+  margin-top: 10px;
+}
+
+header .gear {
+  width: 30px;
+  margin-top: 1px;
+}
+
+header .gear:hover {
+  transform: rotate(90deg);
+}
+
+.login__form {
+  width: 700px;
+  height: 650px;
+  border: 1px solid #673AB7;
+  border-radius: 20px;
+  margin-left: 110px;
+  margin-top: 40px;
+  box-shadow: 0px 3px 9px 2px rgba(0, 0, 0, 0.2);
+}
+
+.login__form h2 {
+  font-family: Bold;
+  font-size: 24px;
+  line-height: 33px;
+  text-align: center;
+  color: #311B92;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.login__form .social {
+  margin-left: 70px;
+}
+
+.login__form a {
+  background-image: url(/IMG/fb.png);
+  background-repeat: no-repeat;
+  background-position: 20px 8px;
+  text-decoration: none;
+  display: inline-block;
+  padding-top: 10px;
+  padding-left: 20px;
+  width: 160px;
+  height: 40px;
+  border-radius: 8px;
+  background-color: #673AB7;
+  font-family: Roboto;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  color: #fff;
+  margin-left: 20px;
+  position: relative;
+}
+
+.login__form a:hover {
+  top: 1px;
+}
+
+.login__form .twitter {
+  background-image: url(/IMG/twitter.png);
+  background-color: #00BCD4;
+}
+
+.login__form .google {
+  background-image: url(/IMG/google-social.png);
+  background-color: #D84226;
+}
+
+.login__form .inscription {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.login__form .inscription p {
+  margin: 0 35px;
+  font-family: Regular;
+  font-size: 16px;
+  line-height: 22px;
+  color: rgba(0, 0, 0, 0.54);
+}
+
+.login__form .stick {
+  margin-bottom: 5px;
+  width: 70px;
+  mix-blend-mode: normal;
+  opacity: 0.64;
+  border-bottom: 1px solid #000000;
+}
+
+.login__form input {
+  width: 550px;
+  height: 50px;
+  border: 1px solid rgba(0, 0, 0, 0.42);
+  border-radius: 8px;
+  margin-left: 80px;
+  margin-bottom: 40px;
+  padding-left: 30px;
+  font-family: Roboto;
+  font-size: 16px;
+  line-height: 19px;
+  color: rgba(0, 0, 0, 0.54);
+}
+
+.login__form input:focus {
+  border: 1px solid #00BCD4;
+  outline: 0px;
+}
+
+.login__form #checkbox {
+  width: 25px;
+  margin-top: -15px;
+  opacity: 0;
+}
+
+.login__form label {
+  font-family: Regular;
+  font-size: 18px;
+  line-height: 25px;
+  color: rgba(0, 0, 0, 0.87);
+}
+
+.login__form label .remember__word {
+  display: inline-block;
+  position: relative;
+  bottom: 5px;
+  left: 25px;
+}
+
+.login__form label .remember {
+  width: 25px;
+  height: 25px;
+  border: 1px solid #00BCD4;
+  display: inline-block;
+  position: relative;
+  background-color: #FFF;
+  border-radius: 2px;
+  padding: 3px;
+}
+
+.login__form [type=checkbox]:checked + .remember:before {
+  /* <-- ставим иконку, когда чекбокс включен  */
+  content: '\2714';
+  position: absolute;
+  top: -2px;
+  left: 0;
+  right: 0;
+  font-size: 26px;
+  background-color: #00BCD4;
+  border: 1px solid #00BCD4;
+  color: white;
+}
+
+.login__form .button {
+  display: inline-block;
+  padding: 10px;
+  border-radius: 40px;
+  background-color: #673AB7;
+  font-family: SemiBold;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+  color: #fff;
+  position: relative;
+}
+
+.login__form .button:hover {
+  top: 1px;
+}
+
+.login__form .button:focus {
+  border: none;
+}
+
+.login__form .not__stile {
+  background-image: none;
+  background-color: #fff;
+  color: #311B92;
+  width: 200px;
+  font-family: Regular;
+  font-size: 18px;
+  line-height: 25px;
+  position: relative;
+  right: -210px;
+  top: -15px;
+}
+
+.login__form .not__stile:hover {
+  top: -14px;
+}
+
+.right__side {
+  width: 490px;
+  height: 525px;
+  float: right;
+  position: relative;
+  top: -580px;
+  right: 110px;
+  background-image: url(/IMG/mobile_back.png);
+  background-repeat: no-repeat;
+  background-position: 50% 100%;
+}
+
+.right__side h1 {
+  font-family: Bold;
+  font-size: 36px;
+  line-height: 38px;
+  text-align: center;
+  color: #311B92;
+  margin-bottom: 40px;
+}
+
+.right__side p {
+  font-family: Regular;
+  font-size: 24px;
+  line-height: 36px;
+  text-align: center;
+  color: #302F2F;
+}
+
+footer {
+  width: 1440px;
+  height: 210;
+  position: relative;
+  background-image: url(/IMG/Footer-2.png);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  top: -371px;
+  display: flex;
+  padding-left: 110px;
+  padding-bottom: 65px;
+}
+
+footer .footer {
+  display: flex;
+  justify-content: right;
+}
+
+footer .footer__div-1 {
+  width: 260px;
+}
+
+footer .logo {
+  top: 0;
+  left: 0;
+  margin-bottom: 22px;
+}
+
+footer p {
+  font-family: Regular;
+  font-size: 16px;
+  line-height: 24px;
+  color: rgba(0, 0, 0, 0.87);
+}
+
+footer div > p {
+  margin-bottom: 40px;
+}
+
+footer .footer__div {
+  width: 165px;
+  margin-left: 60px;
+}
+
+footer .footer__social {
+  width: 210px;
+  display: flex;
+  justify-content: space-between;
+}
+
+footer .footer__social div {
+  width: 37px;
+  height: 37px;
+  background-color: #D1C4E9;
+  border-radius: 50%;
+  margin-bottom: 40px;
+  margin-top: 40px;
+}
+
+footer .footer__social .footer__social-fb {
+  background-image: url(/IMG/fb_footer.png);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+footer .footer__social .footer__social-link {
+  background-image: url(/IMG/link_footer.png);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+footer .footer__social .footer__social-tw {
+  background-image: url(/IMG/Twitter_footer.png);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+footer .footer__social .footer__social-in {
+  background-image: url(/IMG/inst_footer.png);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+footer .select {
+  width: 210px;
+}
+
+footer select {
+  width: 210px;
+  height: 35px;
+  background: #FFFFFF;
+  border: 1px solid #673AB7;
+  border-radius: 5px;
+  font-family: SemiBold;
+  font-size: 18px;
+  line-height: 25px;
+  padding-left: 45px;
+  color: #000;
+  background-image: url(/IMG/android-globe.png);
+  background-repeat: no-repeat;
+  background-position: 15px 6px;
+}
+
+footer select:focus-visible {
+  border: 1px solid #673AB7;
+  outline: 0px;
+}
+
+footer h3 {
+  font-family: Bold;
+  font-size: 18px;
+  line-height: 25px;
+  color: #673AB7;
+  margin-bottom: 20px;
+}
+
+footer a {
+  display: inline-block;
+  text-decoration: none;
+  font-family: Regular;
+  font-size: 16px;
+  line-height: 24px;
+  color: rgba(0, 0, 0, 0.87);
+  margin-bottom: 25px;
+  position: relative;
+}
+
+footer a:hover {
+  top: 1px;
+  color: #673AB7;
+  text-decoration: underline;
+}

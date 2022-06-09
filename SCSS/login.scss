@@ -1,0 +1,402 @@
+@import "reset.scss";
+@import "pattern.scss";
+@import "dark.scss";
+@font-face {
+  font-family: SemiBold; 
+  src: url(/fonts/OpenSans-SemiBold.ttf);
+  font-style: normal;
+}
+@font-face {
+  font-family: Bold; 
+  src: url(/fonts/OpenSans-Bold.ttf);
+  font-style: normal;
+}
+@font-face {
+  font-family: Regular; 
+  src: url(/fonts/OpenSans-Regular.ttf);
+  font-style: normal;
+}
+@font-face {
+  font-family: Roboto;
+  src: url(/fonts/Roboto-Regular.ttf);
+}
+body {
+  background-color: #fff;
+  position: relative;
+  z-index: 1;
+}
+#svg {
+  width: 30px;
+  height: 30px;
+  background-image: url(/SVG/gear.svg);
+  position: relative;
+  top: 7px;
+  &:hover {
+    transform: rotate(90deg);
+  }
+}
+main {
+  width: 1440px;
+  margin: 0 auto;
+  a {
+    text-decoration: none;
+  }
+}
+ // HEADER
+header{
+  width: 1280px / 1440px * 100%;
+  height: 105px;
+  margin: 0 auto;
+  .logo {
+    @extend %logo;
+    img {
+      width: 55px;
+    }
+  }
+    .log{
+      float: right;
+      display: flex;
+      position: relative;
+      top: -22px;
+      right: 30px;
+      height: 40px;
+      a {
+        font-family: SemiBold;
+        font-size: 16px;
+        line-height: 22px;
+        color: #302F2F;
+        position: relative;
+        top: 10px;
+      }
+      .detail {
+        @extend %button;  
+        &:hover {
+          top: 9px;
+         }
+      }
+     }
+      .stick {
+        height: 25px;
+        border-right: 1px solid #979797;
+        margin-right:  30px;
+        margin-top: 10px ;
+      }
+      .gear {
+        width: 30px;
+        margin-top: 1px;
+        &:hover {
+          transform: rotate(90deg);
+         }
+      }
+}
+
+  // LOGIN FORM
+  
+  .login__form {
+    width: 700px;
+    height: 650px;
+    border: 1px solid #673AB7;
+    border-radius: 20px;
+    margin-left: 110px;
+    margin-top: 40px;
+    box-shadow: 0px 3px 9px 2px rgba(0, 0, 0, 0.2);
+    h2 {
+      font-family: Bold;
+      font-size: 24px;
+      line-height: 33px;
+      text-align: center;
+      color: #311B92;
+      margin-top: 50px;
+      margin-bottom: 50px;
+    }
+    .social {
+      margin-left: 70px;
+    }
+    a {
+      background-image: url(/IMG/fb.png);
+      background-repeat: no-repeat;
+      background-position: 20px 8px;
+      text-decoration: none;
+      display: inline-block;
+      padding-top: 10px;
+      padding-left: 20px;
+      width: 160px;
+      height: 40px;
+      border-radius: 8px;
+      background-color: #673AB7;
+      font-family: Roboto;
+      font-size: 18px;
+      line-height: 21px;
+      text-align: center;
+      color: #fff; 
+      margin-left:  20px;
+      position: relative;
+      &:hover {
+       top: 1px;
+      }     
+    }
+    .twitter {
+      background-image: url(/IMG/twitter.png);
+      background-color: #00BCD4;
+    }
+    .google {
+      background-image: url(/IMG/google-social.png);
+      background-color: #D84226;
+    }
+    .inscription {
+      display: flex;
+      justify-content: center;
+      margin-top: 50px;
+      margin-bottom: 50px;
+      p {
+        margin: 0 35px;
+        font-family: Regular;
+        font-size: 16px;
+        line-height: 22px;
+        color: rgba(0, 0, 0, 0.54);
+      }
+    }
+    .stick {
+      margin-bottom: 5px;
+      width: 70px;
+      mix-blend-mode: normal;
+      opacity: 0.64;
+      border-bottom: 1px solid #000000;
+    }
+    input {
+      width: 550px;
+      height: 50px;
+      border: 1px solid rgba(0, 0, 0, 0.42);
+      border-radius: 8px;
+      margin-left: 80px;
+      margin-bottom: 40px;
+      padding-left: 30px;
+      font-family: Roboto;
+      font-size: 16px;
+      line-height: 19px;
+      color: rgba(0, 0, 0, 0.54); 
+      &:focus {
+        border: 1px solid #00BCD4;
+        outline: 0px;
+      }
+    }
+    #checkbox {
+      width: 25px;
+      margin-top: -15px;
+      opacity: 0;
+    }
+    label{
+      font-family: Regular;
+      font-size: 18px;
+      line-height: 25px;
+      color: rgba(0, 0, 0, 0.87);
+      .remember__word {
+        display: inline-block;
+        position: relative;
+        bottom: 5px;
+        left: 25px;
+      }
+      .remember {
+        width: 25px;
+        height: 25px;
+        border: 1px solid #00BCD4;
+        display: inline-block;
+        position: relative;
+        background-color:#FFF;
+        border-radius:2px;
+        padding:3px;
+      }
+    }
+    [type=checkbox]:checked + .remember:before {/* <-- ставим иконку, когда чекбокс включен  */
+      content: '\2714';
+      position: absolute;
+      top: -2px;
+      left: 0;
+      right: 0;
+      font-size: 26px;
+      background-color: #00BCD4;
+      border: 1px solid #00BCD4;
+      color:white;
+    }
+    .button {
+      display: inline-block;
+      padding: 10px;
+      border-radius: 40px;
+      background-color: #673AB7;
+      font-family: SemiBold;
+      font-size: 16px;
+      line-height: 22px;
+      text-align: center;
+      color: #fff; 
+      position: relative;
+      &:hover {
+        top: 1px;
+      }
+      &:focus {
+        border: none;
+      }
+    }
+    .not__stile {
+      background-image: none;
+      background-color: #fff;
+      color: #311B92;
+      width: 200px;
+      font-family: Regular;
+      font-size: 18px;
+      line-height: 25px;
+      position: relative;
+      right: -210px;
+      top: -15px;
+      &:hover {
+        top: -14px;
+      }
+    }
+  }
+  .right__side {
+    width: 490px;
+    height: 525px;
+    float: right;
+    position: relative;
+    top: -580px;
+    right: 110px;
+    background-image: url(/IMG/mobile_back.png);
+    background-repeat: no-repeat;
+    background-position: 50% 100%;
+    h1 {
+      font-family: Bold;
+      font-size: 36px;
+      line-height: 38px;
+      text-align: center;
+      color: #311B92;
+      margin-bottom: 40px;
+    }
+    p {
+      font-family: Regular;
+      font-size: 24px;
+      line-height: 36px;
+      text-align: center;
+      color: #302F2F;
+    }
+  }
+
+  //  FOOTER
+ footer {
+  width: 1440px;
+  height: 210;
+  position: relative;
+  background-image: url(/IMG/Footer-2.png);
+  background-repeat: no-repeat;
+  background-position:  bottom;
+  top: -371px;
+  display: flex;
+  padding-left: 110px;
+  padding-bottom: 65px;
+  .footer {
+    display: flex;
+    justify-content: right;
+  }
+  .footer__div-1 {
+    width: 260px;
+  }
+  .logo {
+    @extend %logo;
+    top: 0;
+    left: 0;
+    margin-bottom: 22px;
+  }
+  p {
+    font-family: Regular;
+    font-size: 16px;
+    line-height: 24px;
+    color: rgba(0, 0, 0, 0.87);
+  }
+  div > p {
+    margin-bottom: 40px;
+  }
+  .footer__div {
+    width: 165px;
+    margin-left: 60px;
+  }
+  .footer__social {
+    width: 210px;
+    display: flex;
+    justify-content: space-between;
+    div {
+      width: 37px;
+      height: 37px;
+      background-color: #D1C4E9;
+      border-radius: 50%;
+      margin-bottom: 40px;
+      margin-top: 40px;
+    }
+
+    .footer__social-fb {
+      background-image: url(/IMG/fb_footer.png);
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+    }
+    .footer__social-link {
+      background-image: url(/IMG/link_footer.png);
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+    }
+    .footer__social-tw {
+      background-image: url(/IMG/Twitter_footer.png);
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+    }
+    .footer__social-in {
+      background-image: url(/IMG/inst_footer.png);
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+    }
+  }
+  .select {
+    width: 210px;
+  }
+  select {
+    width: 210px;
+    height: 35px;
+    background: #FFFFFF;
+    border: 1px solid #673AB7;
+    border-radius: 5px;
+    font-family: SemiBold;
+    font-size: 18px;
+    line-height: 25px;
+    padding-left: 45px;
+    color: #000;
+    background-image: url(/IMG/android-globe.png);
+    background-repeat: no-repeat;
+    background-position: 15px 6px;
+    &:focus-visible {
+      border: 1px solid #673AB7;
+      outline: 0px;
+    }
+  }
+  h3 {
+    font-family: Bold;
+    font-size: 18px;
+    line-height: 25px;
+    color: #673AB7;
+    margin-bottom: 20px;
+  }
+  a {
+    display: inline-block;
+    text-decoration: none;
+    font-family: Regular;
+    font-size: 16px;
+    line-height: 24px;
+    color: rgba(0, 0, 0, 0.87);
+    margin-bottom: 25px;
+    position: relative;
+    &:hover {
+      top: 1px;
+      color: #673AB7;
+      text-decoration: underline; 
+    }
+  }
+ }
+ .options {
+  @extend %hideMenu;
+ }
+

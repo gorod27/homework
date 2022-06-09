@@ -1,0 +1,92 @@
+%logo {
+  width: 160px;
+  height: 55px;
+  position: relative;
+  left: 38px;
+  top: 23%;
+  bottom: 23%;
+    p {
+      position: relative;
+      display: inline-block;
+      top: -55px;
+      font-family: SemiBold;
+      font-size: 36px;
+      line-height: 49px;
+      color: #302F2F;
+      margin-left: 60px;
+    }
+   }
+%button {
+  display: inline-block;
+  position: relative;
+  padding: 10px;
+  width: 115px;
+  height: 40px;
+  border-radius: 40px;
+  background-color: #673AB7;
+  font-family: SemiBold;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+  color: #fff; 
+  margin: -10px 30px;
+}
+%hideMenu {
+    display: none;
+    position: absolute;
+    right: 650px;
+    top: 80px;
+    width: 150px;
+   li {
+     margin-bottom: 5px;
+     height: 30px;
+     text-align: center;
+     font-family: SemiBold;
+     padding-top: 5px;
+     a {
+       color: #673AB7
+     }
+     a:hover {
+       text-decoration: underline;
+     }
+     a:active {
+       color: #673AB7;
+     }
+    }
+}
+%title {
+  font-family: Bold;
+    font-size: 48px;
+    line-height: 72px;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.87);
+}
+%stick {
+  width: 70px;
+  height: 12px;
+  margin: 10px auto;
+  background: linear-gradient(169.02deg, #B2EBF2 -58.33%, #D1C4E9 60.57%);
+  border-radius: 17px;
+}
+%inscription {
+  width: 580px;
+  margin: 0 auto;
+  padding-bottom: 100px;
+  display: none;
+  span {
+    display: block;
+    font-family: Bold;
+    font-size: 20px;
+    color: #673AB7;
+    text-align: center;
+     margin-top: 30px;
+  }
+  p {
+    margin-top: 20px;
+    text-align: center;
+    font-family: Regular;
+    font-size: 18px;
+    line-height: 23px;
+    color: rgba(0, 0, 0, 1);
+  }
+}
