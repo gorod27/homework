@@ -3,7 +3,6 @@
 @import "login.scss";
 @import "dark.scss";
 
-
 @font-face {
   font-family: SemiBold;
   src: url(/fonts/OpenSans-SemiBold.ttf);
@@ -80,6 +79,7 @@ main {
 }
 
  // HEADER
+
 header {
   width: 88.88889%;
   height: 105px;
@@ -408,11 +408,11 @@ header {
 
     //  SLIDER
 
-    .wrapper {
-      background: #fff;
-      width: 1440px;
-      padding: 1px 15px 15px;
-      margin: 0 auto; 
+  .wrapper {
+    width: 1440px;
+    padding: 1px 15px 15px;
+    margin: 0 auto; 
+    background: #fff;
     }
     .slider {
       z-index: 9;
@@ -422,9 +422,7 @@ header {
       margin: 0 0 7px;
       position: relative;
       padding-left: 0px;
-    }
-    
-    .slider .slider__content {
+    .slider__content {
       width: 685px;
       background-image: url(/IMG/slider-1_1.png);
       background-repeat: no-repeat;
@@ -432,97 +430,85 @@ header {
       background-size: 40%;
       position: relative;
       z-index: 2;
+      .slider__content-1 {
+        width: 420px;
+        height: 320px;
+        border-radius: 0 20%  20% 0;
+        box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+        float: right;
+        margin-top: 65px;
+        position: relative;
+        z-index: -2;
+        left: -20px;
+        h3 {
+          font-family: Bold;
+          font-size: 28px;
+          line-height: 44px;
+          color: #3fbdd6;
+          text-align: center;
+          padding-top: 165px;
+          padding-bottom: 20px;
+        }
+        p {
+          display: inline-block;
+          margin-left: 60px;
+          font-family: Regular;
+          width: 300px;
+          font-size: 18px;
+          line-height: 23px;
+          text-align: center;
+          color: rgba(0, 0, 0, 0.87);
+        }
+      }
+      .slider__content-2 h3 {
+        color: #df1962;
+      }
     }
-    
-    .slider .slider__content img {
+    .slider__content img {
       border-radius: 25px;
     }
-    
-    .slider .slider__content .slider__content-1 {
-      width: 420px;
-      height: 320px;
-      border-radius: 0 20%  20% 0;
-      box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
-      float: right;
-      margin-top: 65px;
-      position: relative;
-      z-index: -2;
-      left: -20px;
-    }
-    
-    .slider .slider__content .slider__content-1 h3 {
-      font-family: Bold;
-      font-size: 28px;
-      line-height: 44px;
-      color: #3fbdd6;
-      text-align: center;
-      padding-top: 165px;
-      padding-bottom: 20px;
-    }
-    
-    .slider .slider__content .slider__content-1 p {
-      display: inline-block;
-      margin-left: 60px;
-      font-family: Regular;
-      width: 300px;
-      font-size: 18px;
-      line-height: 23px;
-      text-align: center;
-      color: rgba(0, 0, 0, 0.87);
-    }
-    
-    .slider .slider__content .slider__content-2 h3 {
-      color: #df1962;
-    }
-    
-    .slider .slider__content-img {
+    .slider__content-img {
       background-image: url(/IMG/slider-2_1.png);
     }
-    
+    .nav {
+      position: absolute;
+      left: 635px;
+      bottom: 0;
+      margin: 0 auto;
+      span {
+        opacity: 0.9;
+        background: #fff;
+        margin: 0 8px 0 0;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        cursor: pointer;
+        overflow: hidden;
+        display: block;
+        float: left;
+        border: 2px solid #70d0e2;
+      }
+    }
+   }
     .slider ul,
     .slider li {
       padding: 0;
       margin: 0;
       list-style-type: none;
     }
-    
     .slider ul {
       width: 9999px;
+      li {
+        list-style-type: none;
+        float: left;
+        width: 710px;
+        height: 290px;
+        margin-right: 10px;
+      }
     }
-    
-    .slider ul li {
-      list-style-type: none;
-      float: left;
-      width: 710px;
-      height: 290px;
-      margin-right: 10px;
-    }
-    
-    .slider .nav {
-      position: absolute;
-      left: 635px;
-      bottom: 0;
-      margin: 0 auto;
-    }
-    
-    .slider .nav span {
-      opacity: 0.9;
-      background: #fff;
-      margin: 0 8px 0 0;
-      width: 20px;
-      height: 20px;
-      border-radius: 50%;
-      cursor: pointer;
-      overflow: hidden;
-      display: block;
-      float: left;
-      border: 2px solid #70d0e2;
-    }
-    
     .slider .nav span.on {
       background: #70d0e2;
     }
-
     //  END  SLIDER
 
     //  STORIES
@@ -896,4 +882,19 @@ footer {
 }
 
 @import "media.scss";
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
 
