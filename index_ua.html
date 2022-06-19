@@ -6,9 +6,51 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="SCSS/style_2.css">
   <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-  <script>
-   
-  </script>
+ <style>
+.items a .items__circle:hover {
+  margin-right: 45px;
+}
+.items a .items__circle-2:hover {
+  margin-right: -50px;
+}
+.items a:hover .circle__2 {
+  left: 567px;
+}
+ footer select{
+  font-size: 16px;
+}
+@media screen and (max-width: 992px){
+ main .items a:hover .circle__3 {
+    left: 699px;
+    top: 474px;
+}
+main .items {
+    width: 90%;
+}
+.items a .items__circle-2:hover {
+    margin-right: -38px;
+}
+.items a .items__circle:hover {
+    margin-right: 5px;
+}
+body .home {
+    right: 1%;
+}
+footer select {
+  width: 78%;
+  padding-left: 27px;
+  font-size: 14px;
+  background-position: 8px 6px;
+}
+footer .footer__social {
+    width: 78%;
+}
+footer .footer__div-1 {
+    width: 33%;
+    margin-left: 10px;
+}
+}
+ </style>
   <title>Social Media</title>
   <link rel="icon" type="image/x-icon" href="IMG/logo.png">
 </head>
@@ -66,13 +108,13 @@
         </div>
       <div class="items__stick"></div>
      <div class="items__div">      
-      <a href="#"> <div class="circle circle__2"></div><h2 class="items__circle">Безоплатні проєкти</h2></a>
+      <a href="#"> <div class="circle circle__2"></div><h2 class="items__circle"> Наші проєкти</h2></a>
         <p>Конкретніше за посиланням…</p>
       </div> 
       <div class="items__stick"></div>
       <div>
         <div class="items__div"></div>
-       <a href="#"> <div class="circle circle__3"></div><h2>Наші напрацювання</h2></a>
+       <a href="#"> <div class="circle circle__3"></div><h2 class="items__circle-2">Наші напрацювання</h2></a>
         <p>Конкретніше за посиланням…</p>
       </div>
     </div>
@@ -343,10 +385,10 @@
       </div>
       <div class="footer__div">
         <h3>ПОСЛУГИ</h3>
-      <a href="#">Cras convallis</a>
-      <a href="#">Vestibulum faucibus</a>
-      <a href="#">Quisque lacinia purus</a>
-      <a href="#">Aliquam nec ex</a>
+      <a href="#">Послуга №1</a>
+      <a href="#">Послуга №2</a>
+      <a href="#">Послуга №3</a>
+      <a href="#">Послуга №4</a>
       </div>
       <div class="footer__div">
         <h3>ПОСИЛАННЯ</h3>
@@ -364,7 +406,7 @@
     <form action="select1.php" method="post"> 
     <select  size="1">
       <option   value="English" class="lang" >English - En</option>
-        <option selected value="Українською" class="lang_1">Українською - Ua</option>
+        <option selected value="Українською" class="lang_1" id="lang__ua">Українською - Ua</option>
         <option value="Français" class="lang_2">Français - Fr</option>
         <option value="Polski" class="lang_3">Polski - Pl</option>
         </select>

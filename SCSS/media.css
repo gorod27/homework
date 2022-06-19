@@ -23,20 +23,25 @@
     padding-bottom: 0;
   }
   footer .footer__div-1 {
-    width: 33%;
+    width: 38%;
+    margin-left: 10px;
   }
   footer .footer__div {
     width: 33%;
+    margin-left: 0;
   }
   footer .footer__social {
-    width: 33%;
+    width: 88%;
   }
   footer .footer__social div {
     margin-bottom: 10px;
     margin-top: 40px;
   }
-  footer .select, footer select {
-    width: 65%;
+  footer select {
+    width: 88%;
+    padding-left: 37px;
+    font-size: 15px;
+    background-position: 8px 6px;
   }
   main {
     width: 100%;
