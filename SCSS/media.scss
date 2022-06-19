@@ -197,8 +197,9 @@
         }
       }
       .features__screen-2 {
-        margin-top: 326px;
-        right: -563px;
+        margin-top: 34%;
+        right: -57%;
+        
       }
       .features__footer {
         width: 100%;
@@ -293,4 +294,129 @@
       }
     }
   }
+}
+
+  //768
+
+@media screen and (max-width: 768px) {
+  body {
+    width: 100%;
+    .home {
+      right: 17%;
+    }
+    .oval__2 {
+      width: 232.63px;
+      height: 457.05999999999995px;
+      left: 121px;
+      top: -147.82999999999998px;
+    }
+    main {
+      width: 100%;
+      header {
+        .menu {
+          .log {
+            right: 98px;
+          }
+        }
+      }
+      .text {
+        .google {
+          float: right;
+          left: 23px;
+          top: -48px;
+        }
+      }
+    }
+  }
+  .features {
+    .features__text {
+      margin-right: -5px;
+      padding-top: 90px;
+  }
+  .features__text-2 {
+    left: -377px;
+    top: -100px;
+}
+.features__text-3 {
+  div {
+    img {
+      width: 85%;
+    }
+  }
+}
+.features__screen-2 {
+  margin-right: 23px;
+  margin-left: 0px;
+  top: -212px;
+}
+.features__footer {
+  padding-bottom: 24px;
+  .features__footer-stick {
+    margin: 31px 60px;
+  }
+  .download {
+    font-size: 29px;
+  } 
+  .download span {
+    font-size: 24px;
+  }
+} 
+}
+.discover {
+  .wrapper {
+    width: 931px;
+    .slider {
+      .slider__content {
+       background-position: 60% 0%;
+         background-size: 30%;
+       img {
+         width: 33%;
+       }
+       .slider__content-1 {
+         left: -59px!important;
+         width: 463px;
+         height: 271px;
+         margin-top: 78px;
+         h3 {
+           font-size: 25px;
+           padding-top: 117px;
+         }
+     }
+      }
+     }
+  }
+}
+.community {
+  .container {
+    .container__img-moto {
+      margin-top: 0;
+    }
+    .container__img {
+      margin-top: 8px;
+      img {
+        display: inline-block;
+        width: 188px;
+        margin-left: 28px;
+      }
+      .container__img-photo {
+        p {
+          font-size: 25px;
+        }
+        .container__number {
+          font-size: 20px;
+          width: 77px;
+          height: 28px;
+          top: 201px;
+          left: 174px;
+        }
+        .container__img-link {
+          width: 176px;
+          height: 59px;
+          right: 219px;
+        }
+      }
+    }
+  }
+} 
+
 }

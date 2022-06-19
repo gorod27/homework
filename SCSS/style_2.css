@@ -2190,8 +2190,8 @@ footer {
     margin-right: 0;
   }
   .features .features__screen-2 {
-    margin-top: 326px;
-    right: -563px;
+    margin-top: 34%;
+    right: -57%;
   }
   .features .features__footer {
     width: 100%;
@@ -2275,5 +2275,105 @@ footer {
   }
   .update .update__container-2 span {
     padding-top: 13%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    width: 100%;
+  }
+  body .home {
+    right: 17%;
+  }
+  body .oval__2 {
+    width: 232.63px;
+    height: 457.05999999999995px;
+    left: 121px;
+    top: -147.82999999999998px;
+  }
+  body main {
+    width: 100%;
+  }
+  body main header .menu .log {
+    right: 98px;
+  }
+  body main .text .google {
+    float: right;
+    left: 23px;
+    top: -48px;
+  }
+  .features .features__text {
+    margin-right: -5px;
+    padding-top: 90px;
+  }
+  .features .features__text-2 {
+    left: -377px;
+    top: -100px;
+  }
+  .features .features__text-3 div img {
+    width: 85%;
+  }
+  .features .features__screen-2 {
+    margin-right: 23px;
+    margin-left: 0px;
+    top: -212px;
+  }
+  .features .features__footer {
+    padding-bottom: 24px;
+  }
+  .features .features__footer .features__footer-stick {
+    margin: 31px 60px;
+  }
+  .features .features__footer .download {
+    font-size: 29px;
+  }
+  .features .features__footer .download span {
+    font-size: 24px;
+  }
+  .discover .wrapper {
+    width: 931px;
+  }
+  .discover .wrapper .slider .slider__content {
+    background-position: 60% 0%;
+    background-size: 30%;
+  }
+  .discover .wrapper .slider .slider__content img {
+    width: 33%;
+  }
+  .discover .wrapper .slider .slider__content .slider__content-1 {
+    left: -59px !important;
+    width: 463px;
+    height: 271px;
+    margin-top: 78px;
+  }
+  .discover .wrapper .slider .slider__content .slider__content-1 h3 {
+    font-size: 25px;
+    padding-top: 117px;
+  }
+  .community .container .container__img-moto {
+    margin-top: 0;
+  }
+  .community .container .container__img {
+    margin-top: 8px;
+  }
+  .community .container .container__img img {
+    display: inline-block;
+    width: 188px;
+    margin-left: 28px;
+  }
+  .community .container .container__img .container__img-photo p {
+    font-size: 25px;
+  }
+  .community .container .container__img .container__img-photo .container__number {
+    font-size: 20px;
+    width: 77px;
+    height: 28px;
+    top: 201px;
+    left: 174px;
+  }
+  .community .container .container__img .container__img-photo .container__img-link {
+    width: 176px;
+    height: 59px;
+    right: 219px;
   }
 }
