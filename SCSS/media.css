@@ -369,3 +369,156 @@
     right: 219px;
   }
 }
+
+@media screen and (max-width: 576px) {
+  body .oval__2 {
+    width: 194.63px;
+    height: 435.05999999999995px;
+    left: -10px;
+    top: -187.82999999999998px;
+  }
+  body #svg {
+    width: 21px;
+    height: 25px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    top: 11px;
+  }
+  body main {
+    width: 98%;
+  }
+  body main header .menu nav {
+    width: 196px;
+  }
+  body main header .menu .log {
+    right: 51px;
+  }
+  body main header .menu .log .detail {
+    font-size: 11px;
+  }
+  body main .text .google {
+    left: 108px;
+  }
+  body main .items {
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+  }
+  body main .items a:hover .circle__3 {
+    left: 180px;
+    top: 568px;
+  }
+  body main .items .items__circle:hover {
+    left: 4px;
+  }
+  body main .items h2 {
+    font-size: 16px;
+  }
+  body main .items h2:hover {
+    margin-left: 41px;
+    float: none;
+  }
+  body main .items p {
+    font-size: 12px;
+  }
+  body main .features .features__text {
+    width: 300px;
+    padding-top: 4px;
+  }
+  body main .features .features__text .features__title {
+    font-size: 18px;
+    margin-right: 28px;
+    line-height: 42px;
+  }
+  body main .features .features__text p {
+    font-size: 15px;
+  }
+  body main .features .features__text-2 {
+    left: -269px;
+  }
+  body main .features .features__text-3 {
+    margin-right: 111px;
+  }
+  body main .features .features__text-3 img {
+    margin-left: -128px;
+    width: 178%;
+  }
+  body main .features .features__footer {
+    padding-top: 0;
+    padding-bottom: 54px;
+  }
+  body main .features .features__footer .download span {
+    font-size: 20px;
+  }
+  body main .discover .wrapper .slider .nav {
+    left: 31%;
+    bottom: 68px;
+  }
+  body main .discover .wrapper .slider .slider__content {
+    background-position: 47% -1%;
+    background-size: 26%;
+  }
+  body main .discover .wrapper .slider .slider__content img {
+    width: 30%;
+  }
+  body main .discover .wrapper .slider .slider__content .slider__content-1 {
+    left: -237px !important;
+    width: 267px;
+    height: 291px;
+    margin-top: 44px;
+  }
+  body main .discover .wrapper .slider .slider__content .slider__content-1 h3 {
+    font-size: 23px;
+    padding-top: 107px;
+  }
+  body main .discover .wrapper .slider .slider__content .slider__content-1 p {
+    width: 157px;
+    font-size: 15px;
+  }
+  body main .stories {
+    height: 450px;
+  }
+  body main .stories .inscription, body main .stories .inscription-2, body main .stories .inscription-3, body main .stories .inscription-4, body main .stories .inscription-5 {
+    width: 90%;
+  }
+  body main .stories .inscription p, body main .stories .inscription-2 p, body main .stories .inscription-3 p, body main .stories .inscription-4 p, body main .stories .inscription-5 p {
+    font-size: 16px;
+  }
+  body main .stories .avatars div {
+    margin-right: 6px;
+    margin-left: -4px;
+  }
+  body main .community {
+    margin-top: 26px;
+  }
+  body main .community .container {
+    margin-top: 10px;
+  }
+  body main .community .container .container__img {
+    width: 269px;
+  }
+  body main .community .container .container__img .container__img-photo .container__img-link {
+    width: 232px;
+    height: 59px;
+    right: 50%;
+    top: 16px;
+  }
+  body main .community .container .container__img .container__img-photo .container__img-link:hover {
+    top: 17px;
+  }
+  body main .update .update__container-2 p {
+    font-size: 10px;
+    line-height: 18px;
+  }
+  body main footer .footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  body main footer .footer .select {
+    order: 1;
+  }
+  body main footer .footer__div-1 {
+    order: 1;
+  }
+}

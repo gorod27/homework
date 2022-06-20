@@ -25,7 +25,6 @@
       border-radius: 10% 50% 4% 90%;
     }
   }
-
   footer {
     width: 100%;
     padding-left: 0;
@@ -52,8 +51,6 @@
       background-position: 8px 6px;
     }
   }
-
-
   main {
     width: 100%;
     .options {
@@ -160,7 +157,6 @@
        }
     }
   }
-
     .features {
       .features__screen {
         width: 40%;
@@ -199,7 +195,6 @@
       .features__screen-2 {
         margin-top: 34%;
         right: -57%;
-        
       }
       .features__footer {
         width: 100%;
@@ -209,7 +204,6 @@
         width: 100%;
       }
   }
-
   .discover {
     .wrapper {
       width: 100%;
@@ -418,5 +412,190 @@
     }
   }
 } 
-
 }
+
+  //576
+
+@media screen and (max-width: 576px) {
+  body  {
+    .oval__2 {
+      width: 194.63px;
+      height: 435.05999999999995px;
+      left: -10px;
+      top: -187.82999999999998px;
+    }
+    #svg {
+      width: 21px;
+      height: 25px;
+      background-size: contain;
+      background-repeat: no-repeat;
+      top: 11px;
+    }
+    main {
+      width: 98%;
+    header {
+      .menu {
+        nav {
+          width: 196px;
+        }
+        .log {
+          right: 51px;
+          .detail {
+            font-size: 11px;
+          }
+         
+        }
+      }
+    }
+    .text {
+      .google {
+        left: 108px;
+      }
+    }
+    .items {
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-around;
+      a {
+        &:hover .circle__3{
+          left: 180px;
+          top: 568px;
+        }
+      }
+      .items__circle:hover {
+        left: 4px;
+      }
+      h2 {
+       font-size: 16px;
+       &:hover {
+        margin-left: 41px;
+        float: none;
+       }
+      }
+      p {
+        font-size: 12px;
+      }
+    }
+    .features {
+     .features__text {
+      width: 300px;
+      padding-top: 4px;
+      .features__title {
+        font-size: 18px;
+        margin-right: 28px;
+        line-height: 42px;
+      }
+      p {
+        font-size: 15px;
+      }
+     }
+     .features__text-2 {
+      left: -269px;
+     }
+     .features__text-3 {
+      margin-right: 111px;
+      img {
+        margin-left: -128px;
+        width: 178%;
+      }
+     }
+     .features__footer {
+      padding-top: 0;
+      padding-bottom: 54px;
+      .download {
+        span {
+          font-size: 20px
+        }
+      }
+     }
+    }
+    .discover {
+      .wrapper {
+        .slider {
+          .nav {
+            left: 31%;
+            bottom: 68px;
+          }
+          .slider__content {
+            background-position: 47% -1%;
+            background-size: 26%;
+            img {
+              width: 30%;
+            }
+            .slider__content-1 {
+              left: -237px !important;
+              width: 267px;
+              height: 291px;
+              margin-top: 44px;
+              h3 {
+                font-size: 23px;
+                padding-top: 107px;
+              }
+              p {
+                width: 157px;
+                font-size: 15px;
+              }
+            }
+          }
+        }
+      }
+    }
+    .stories {
+      height: 450px;
+      .inscription, .inscription-2, .inscription-3, .inscription-4, .inscription-5 {
+        width: 90%;
+        p {
+          font-size: 16px;
+        }
+      }
+      .avatars {
+        div {
+          margin-right: 6px;
+    margin-left: -4px;
+        }
+      }
+    }
+    .community {
+      margin-top: 26px;
+      .container {
+        margin-top: 10px;
+        .container__img {
+          width: 269px;
+          .container__img-photo {
+            .container__img-link {
+              width: 232px;
+              height: 59px;
+              right: 50%;
+              top: 16px;
+              &:hover {
+                top: 17px;
+              }
+            }
+          }
+        }
+      }
+    }
+    .update {
+      .update__container-2 {
+        p {
+          font-size: 10px;
+          line-height: 18px;
+        }
+      }
+    }
+    footer {
+      .footer {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        .select {
+          order: 1;
+        }
+      }
+      .footer__div-1 {
+        order: 1;
+      }
+    }
+  }
+}
+}  
