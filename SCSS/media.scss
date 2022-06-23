@@ -11,7 +11,7 @@
     width: 99%; 
     .home {
       width: 110px;
-      right: 15%;
+      left: 86%;
     }
     .oval__2 {
       position: absolute;
@@ -131,17 +131,22 @@
       }
       .items__div {
         width: 200px;
-       position: relative;
+        position: relative;
        }
        a {
           &:hover .circle {
-            top: -5px;
+             top: -8px;
             left: 0;
         }
           &:hover .circle__3 {
-            left: 72%;
+            left: 0%;
             float: left;
-            top: 7.9%;
+            top: -10.1%;
+          }
+          &:hover .nulla {
+            margin-left: 38px;
+            width: 187px;
+            float: none;
           }
        }
        .items__circle:hover {
@@ -162,20 +167,9 @@
   }
     .features {
       .features__screen {
-        // width: 40%;
         margin-left: 0;
-        img {
-          // width: 100%;
-        }
       }    
-      .features__screen img {
-        // width: 93%;
-      }
       .features__text {
-        // float: right;
-        // width: 44%;
-        // margin-right: 75px;
-        // padding-top: 10%;
         .features__title {
           font-size: 22px;
           line-height: 34px;
@@ -189,8 +183,6 @@
         }
       }
       .features__text-2 {
-        // left: -47%;
-        // top: -100px;
         .features__title-2 {
           margin-left: 10px;
           margin-right: 0;
@@ -204,26 +196,25 @@
         width: 100%;
        
       }
-      .features__text-3 {
-        // width: 100%;
-      }
   }
   .discover {
     .wrapper {
       width: 117%;
+      padding: 1px 0px 18px 1px;
+      margin-left: 11%;
       .slider {
         width: 74%;
         .slider__content {
           width: 100%;
           background-position: 69% -1%;
-    background-size: 33%;
+          background-size: 33%;
           .slider__content-1 {
             left: -39px;
           }
       }
     }
     .slider .nav {
-      left: 48%;
+      left: 37%;
     }
     }
   }
@@ -239,6 +230,9 @@
   .community {
     .container {
       width: 100%;
+      .container__img-music {
+        margin-top: 0px;
+      }
       .container__img-moto {
         margin-top: -1px;
     }
@@ -246,10 +240,10 @@
         width: 285px;
         .container__img-photo {
           .container__img-link {
-            width: 90%;
             height: 50px;
-            right: 104%;
-            top: 10%;
+            width: 100%;
+            left: -4%;
+            margin-top: -7%;
           }
           p {
             font-size: 30px;
@@ -319,7 +313,9 @@
       header {
         .menu {
           nav {
-            width: 50%;
+            width: 100%;
+            margin-left: -27%;
+            top: 15%;
           }
           .log {
             right: 16%;
@@ -336,8 +332,8 @@
       .items {
         a {
           &:hover .circle__3 {
-            left: 69%;
-            top: 8.25%;
+            left: -1%;
+            top: -10.75%;
           }
         }
       }
@@ -365,15 +361,8 @@
 .features__text-3 {
   div {
     img {
-      // width: 85%;
     }
   }
-}
-.features__screen {
-  // img {
-  //   margin-left: 87%;
-  //   margin-top: 88%;
-  // }
 }
 .features__screen-2 {
   margin-right: 23px;
@@ -398,7 +387,7 @@
     width: 931px;
     .slider {
       .nav {
-        left: 45%;
+        left: 34%;
       }
       .slider__content {
        background-position: 60% 0%;
@@ -491,7 +480,7 @@
     }
     .text {
       .google {
-        left: 108px;
+        top: 0px;
       }
     }
     .items {
@@ -500,8 +489,8 @@
       justify-content: space-around;
       a {
         &:hover .circle__3{
-          left: 32%;
-          top: 9.2%;
+          left: 0%;
+          top: -15.8%;
         }
       }
       .items__circle:hover {
@@ -520,26 +509,14 @@
     }
     .features {
      .features__text {
-      // width: 300px;
       padding-top: 4px;
       .features__title {
         font-size: 18px;
-        // margin-right: 28px;
         line-height: 42px;
       }
       p {
         font-size: 15px;
       }
-     }
-     .features__text-2 {
-      // left: -269px;
-     }
-     .features__text-3 {
-      // margin-right: 111px;
-      // img {
-      //   margin-left: -128px;
-      //   width: 178%;
-      // }
      }
      .features__footer {
       padding-top: 0;
@@ -641,7 +618,9 @@
   }
 }
 }  
+
   // 400
+  
 @media screen and (max-width: 400px) {
   body {
     main {
@@ -706,6 +685,7 @@
       .discover {
         .wrapper {
           padding: 0;
+          margin-left: 4%;
           .slider {
             height: 397px;
             .nav {
@@ -742,7 +722,51 @@
           }
         }
       }
-      
+      .stories {
+        .avatars {
+          flex-wrap: wrap;
+        }
+      }
+      .community {
+        margin-top: 65%;
+        .container {
+          width: 69%;
+         height: 1901px;
+         .container__img {
+          .container__img-photo {
+            .container__img-link {
+              left: -4%;
+            }
+          }
+         }
+      }
+      }
+      .update {
+        .update__text {
+          font-size: 18px;
+        }
+        .update__container {
+          width: 90%;
+          margin-left: 5%;
+        }
+        .update__container-2 {
+          width: 73%;
+        }
+      }
+      .store {
+        h1 {
+          padding-top: 488px;
+          font-size: 30px;
+        }
+        .store__links {          
+          flex-direction: column;         
+          align-items: center;
+        }
+        .google {
+          width: 259px;
+          margin-top: 10px;
+        }
+      }
     }
   }
 }

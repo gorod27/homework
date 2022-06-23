@@ -68,7 +68,6 @@ body {
   }
 }
 
-
 main {
   position: relative;
   max-width: 1440px;
@@ -80,7 +79,6 @@ main {
 }
 
  // HEADER
-
 
 header {
   width: 88.88889%;
@@ -206,7 +204,6 @@ header {
   }
 }
 
-
 .items {
   width: 1045px;
   height: 75px;
@@ -269,6 +266,7 @@ header {
     opacity: 0;
   }
 }
+
   // FEATURES
 
   .features {
@@ -285,17 +283,7 @@ header {
       @extend %stick;
     }
   
-    
-    // .features__screen {
-      // width: 50%;
-    //   margin-left: 120px;
-    //   float: left;
-    // }
     .features__text {
-      // width: 595px;
-      // float: right;
-      // margin-right: 110px;
-      // padding-top: 150px;
       .circle {
         float: left;
         width: 20px;
@@ -325,17 +313,12 @@ header {
       }
     }
     .features__text-2 {
-      // position: relative;
-      // float: left;
-      // left: -520px;
-      // margin-top: 180px;
       .features__title-2 {
         float: left;
         margin-left: 140px;
         margin-right: 0;
       }
       .circle {
-        // float: right;
         margin-left: 3%;
       }
       p {
@@ -343,23 +326,7 @@ header {
 
       }
     }
-    .features__screen-2 {
-      // margin-right: 90px;
-      // margin-left: 0px;
-      // float: right;
-      // position: relative;
-      // top: -310px;
-      // margin-bottom: -230px;
-    }
     .features__text-3 {
-      // display: flex;
-      // float: none;
-      // flex-direction: column;
-      // align-items: center;
-      // justify-content: center;
-      // margin: 0 auto;
-      // width: 880px;
-      // padding-top: 0;
       .features__circle {
         width: 18px;
         height: 18px;
@@ -403,7 +370,6 @@ header {
     }
    .features__text-3  {
     grid-area: 3/  span 2;
-    // border: 1px solid red;
    }
    .block-2 {
     padding-top: 22.5%;
@@ -415,7 +381,6 @@ header {
     h3 {
     }
    }
-  
    .block-6 {
     grid-area: 4/  span 2;
     img {
@@ -423,7 +388,6 @@ header {
       margin-left: 22.55%;
     }
    }
-
    .block {
    }
    .features__text-3 {
